@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script></script>
+<title>Time right now is: </title>
+</head>
+<body>
+<script>
+
+	function countOdd(count){
+  var log = ''
+  for(i=1;i<=count;i++){
+    if(i % 2 !== 0){
+      log+="= " 
+    }else{
+      log+="* "
+    }
+  }
+  console.log(log)
+}
+
+function countEven(count){
+  var log = ''
+  for(i=1;i<=count;i++){
+    if(i % 2 !== 0){
+      log+="* "
+    }else{
+      log+="= "
+    }
+  }
+  console.log(log)
+}
+
+function printImage(count){
+  var a = 1
+  while(a <= count){
+    if(a % 2 !== 0){
+      countOdd(count)
+    }else{
+      countEven(count)
+    }
+    a++
+  }
+}
+
+printImage(5)
+
+</script>
+</body>
+</html>
